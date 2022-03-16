@@ -599,7 +599,7 @@ ngApp.controller('myValidatorController', function($scope) {
 			return "";
 		} else {
 			testSuiteId = item.replace("//v2", "/v2");
-			testSuiteId = testSuiteId.replace($scope.urlRealValidator + "ExecutableTestSuites/", "");
+			testSuiteId = testSuiteId.replace($scope.urlValidator + "ExecutableTestSuites/", "");
 			testSuiteId = testSuiteId.replace(".json", "");
 			console.log(testSuiteId.substring(0,2));
 			if (testSuiteId.substring(0,3) != "EID") testSuiteId = "EID" + testSuiteId;
